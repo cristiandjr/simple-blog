@@ -1,0 +1,9 @@
+      
+      {{#if user}}
+        <a href="/posts/edit/{{_id}}" class="btn btn-primary">edit</a>
+
+        <form action="/posts/delete/{{_id}}?_method=DELETE" method="POST">
+            <input type="hidden" name="_method" value="DELETE">
+            <button type="submit" class="btn btn-danger">Delete</button>
+        </form>
+      {{/if}}

@@ -1,0 +1,17 @@
+<!-- Muestro los error que me manda por passport -->
+{{#if error}}
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        {{error}} <!-- asi es como passport pasa los mensajes de error -->
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">&times;</button>
+    </div>
+{{/if}}
+
+<!-- muestro los errores de la app por pantalla, estos mensajes no tienen nada que ver con connect-flash ya que
+estoy pintando lo que envio como objeto a esta vista de la coleccion de arreglos con errores de users.controller.js -->
+{{#each errors}}
+    <!-- Por cada elemento q hay en la lista de errores voy a pintar por pantalla un alert -->
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        {{text}} <!-- como sabe q dentro de errors en users.controller.js tiene una propiedad TEXT que me lo pinte -->
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">&times;</button>
+    </div>
+{{/each}}

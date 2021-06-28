@@ -1,0 +1,23 @@
+<div class="col-md-8 mx-auto">
+    <div class="card">
+        <div class="card-header">
+            <h1>Editar entrada</h1>
+        </div>
+        <div class="card-body">
+            <form action="/posts/edit/{{post._id}}?_method=PUT" method="POST">
+                <input type="hidden" name="_method" value="PUT">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Titulo</label>
+                    <input type="text" class="form-control" name="title" value="{{post.title}}">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Entrada</label>
+                    <textarea class="form-control" name="description" rows="8">{{post.description}}</textarea>
+                </div>
+                <div class="mb-3">
+                    <button type="submit" class="btn btn-primary btn-block">Editar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+<div class="col-md-8 mx-auto">
+    <div class="card">
+        <div class="card-header">
+            <h1>Crear nueva entrada</h1>
+        </div>
+        <div class="card-body">
+            <form action="/posts/new-post" method="POST">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Titulo</label>
+                    <input type="text" class="form-control" name="title" placeholder="Titulo">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Entrada</label>
+                    <textarea class="form-control" name="description" rows="8" placeholder="¿Que estas pensando...?"></textarea>
+                </div>
+                <div class="mb-3">
+                    <button type="submit" class="btn btn-primary btn-block">Publicar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
