@@ -1,9 +1,9 @@
 <main class="container">
   <div class="d-flex align-items-center p-3 my-3 text-white bg-purple rounded shadow-sm">
-    <img class="me-3" src="/docs/5.0/assets/brand/bootstrap-logo-white.svg" alt="" width="48" height="38">
+    <img class="me-3" src="https://lh3.googleusercontent.com/ogw/ADea4I7SqSxu_1il6DEsWN4qBJBXQQGp1IH0mb21eXXc8w=s32-c-mo" alt="">
     <div class="lh-1">
-      <h1 class="h6 mb-0 text-white lh-1">cshjdr</h1>
-      <small>Simple blog es un proyecto creado de cero con la instencion de aprender varias tecgnologias en Js.</small>
+      <h1 class="h6 mb-0 text-white lh-1">@cshjdr</h1>
+      <small>Simple blog es un proyecto creado de cero con la inatención de aprender varias tecnologías en Js...</small>
     </div>
   </div>
 
@@ -15,20 +15,20 @@
       {{#each posts}}
         <div class="d-flex text-muted pt-3">
           <p class="pb-3 mb-0 small lh-sm border-bottom">
-            <strong class="d-block text-gray-dark">{{title}}</strong>
+            <strong class="d-block text-gray-dark">
+              {{title}}
+              <a href="/posts/edit/{{_id}}"><i class="fas fa-edit"></i></a> 
+            </strong>
             {{description}}
           </p>
 
-          <hr><hr>
+        
 
-          <a href="/posts/edit/{{_id}}" class="btn btn-primary">edit</a> || 
-
-          <form action="/posts/delete/{{_id}}?_method=DELETE" method="POST">
-            <input type="hidden" name="_method" value="DELETE">
-            <button type="submit" class="btn btn-danger">Delete</button>
-          </form>
-
-        </div>
+        <form action="/posts/delete/{{_id}}?_method=DELETE" method="POST">
+          <input type="hidden" name="_method" value="DELETE">
+          <button type="submit"><i class="fas fa-trash-alt" style="color:red;"></i></button>
+        </form>
+</div>
       {{/each}}
     {{else}}
       {{#each posts}}

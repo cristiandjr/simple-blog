@@ -1,7 +1,7 @@
 const {Router} = require('express');
 const router = Router();
 
-const { renderIndex, renderIndexMenuAdmin } = require('../controllers/index.controller');
+const { renderIndex } = require('../controllers/index.controller');
 
 router.get('/', renderIndex);
 

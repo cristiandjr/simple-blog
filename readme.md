@@ -1,18 +1,20 @@
-**Readme**
+# Simple Blog v1.0.0
 
-modificado desde github (servidor) y actualizado desde git (local)
+# Imagenes
+![Alt text](./readme/inicio.png "Inicio")
+![Alt text](./readme/adminPanelForm.png "AdminForm")
+![Alt text](./readme/adminInicio.png "AdminInicio")
+![Alt text](./readme/adminEditForm.png "AdminEditForm")
+
+# Tecnologias/Modulos/Frameworks utilizados
 
 
-```javascript
-    console.log('Probando ando');
-    if(true){
-        console.log('paso por aca');
-    }
-
-    const arrow = () => {
-        setTimeout(()=>{
-            console.log('Esperando')
-        },3000)
-    }
-```
-
+# Proximamente
+- Paginacion
+- Entrada entera
+- Categorias relecionadas a la entrada
+- Nube de tags
+- + validaciones
+- Buscador
+- Eleccion y mejoras de estilos principales
+- Sistema para subir estilos propios
