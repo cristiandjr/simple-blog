@@ -1,5 +1,5 @@
 # Simple Blog v1.0.0
-    Sistema de blog creado de cero con el simple afán de aprender, mejorar y añadir nuevas tecnologías. La idea principal es hacer algo similar a WordPress pero de bajo presupuesto 😂 
+> Sistema de blog creado de cero con el simple afán de aprender, mejorar y añadir nuevas tecnologías. La idea principal es hacer algo similar a WordPress pero de bajo presupuesto 😂 
 
 # Imágenes
 ![Alt text](./readme/inicio.png "Inicio")
