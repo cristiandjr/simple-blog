@@ -22,7 +22,7 @@
 
 # Proximamente
 - Paginación
-- Entrada entera
+- [x] Entrada entera por ID
 - Categorías relacionadas a la entrada
 - Nube de tags
 - Mas validaciones
