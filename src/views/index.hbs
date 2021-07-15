@@ -16,7 +16,7 @@
         <div class="d-flex text-muted pt-3">
           <p class="pb-3 mb-0 small lh-sm border-bottom">
             <strong class="d-block text-gray-dark">
-              {{title}}
+              <a href="/posts/post/{{_id}}">{{title}}</a>
               <a href="/posts/edit/{{_id}}"><i class="fas fa-edit"></i></a> 
             </strong>
             {{description}}
@@ -34,7 +34,9 @@
       {{#each posts}}
         <div class="d-flex text-muted pt-3">
           <p class="pb-3 mb-0 small lh-sm border-bottom">
-            <strong class="d-block text-gray-dark">{{title}}</strong>
+            <strong class="d-block text-gray-dark">
+              <a href="/posts/post/{{_id}}">{{title}}</a>
+            </strong>
             {{description}}
           </p>
         </div>
